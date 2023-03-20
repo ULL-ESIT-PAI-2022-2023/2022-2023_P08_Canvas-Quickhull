@@ -65,37 +65,42 @@ de un conjunto de puntos en el plano es un polígono convexo cuyos
 vértices son algunos de los puntos del conjunto inicial de puntos.
 
 En esta práctica se propone calcular y representar gráficamente la envolvente convexa de un conjunto 
-de puntos del plano mediante el algoritmo concido como *QuickHull*.
-Los puntos iniciales para el cálculo de la envolvente convexa se generarán aletoriamente.
+de puntos del plano que se generarán aletoriamente.
 
 Desarrolle un programa `quick-hull.ts` que calcule y represente gráficamente la
 envolvente convexa de un conjunto de puntos utilizando el algoritmo 
 [Quickhull](https://en.wikipedia.org/wiki/Quickhull).
 
-El funcionamiento del programa estará apoyado por la clase *Hull* cuya interfaz pública será la que
+[Este vídeo](https://www.youtube.com/watch?v=2EKIZrimeuk)
+aporta información sobre la envolvente convexa así como el algoritmo *QuickHull* y puede servirle de guía para
+comprender el algoritmo, cuyos pasos son los que se describen (p. ej.) en
+[Wikipedia](https://en.wikipedia.org/wiki/Quickhull#Algorithm)
+
+El funcionamiento del programa estará apoyado por una clase cuya interfaz pública será la que
 dibuje la envolvente convexa.
 
-### La clase *Hull*
-En esta práctica se propone desarrollar una clase `Hull` 
-que posibilite la visualización de la nube de puntos y el cálculo de su envolvente convexa.
+Trate de imitar 
+[esta simulación](https://en.wikipedia.org/wiki/Quickhull#/media/File:Animation_depicting_the_quickhull_algorithm.gif) 
+priorizando la visualización de la nube de puntos y las líneas que el algoritmo dibuja progresivamente. 
+El dibujo de los ejes de coordenadas puede considerarse una característica opcional.
 
 La visualización de la ejecución del programa se realizará a través de una página web alojada
 en la máquina IaaS-ULL de la asignatura y cuya URL tendrá la forma:
 
 [1] `http://10.6.129.123:8080/einstein-albert-quick-hull.html`
 
-en la que se embeberá un lienzo (canvas) para dibujar el conjunto.
+en la que se embeberá un lienzo (canvas) para dibujar el conjunto de puntos y su polígono envolvente.
 Sustituya *Albert Einstein* por su nombre y apellido en la URL de su página
-y la dirección IP anterior por la correspondiente a su máquina IaaS.
+ la dirección IP anterior por la correspondiente a su máquina IaaS.
 
-La web mostrará un lienzo (canvas) que ocupe la mayor parte de una pantalla de ordenador de resolución usual.
+La web [1] mostrará un lienzo (canvas) que ocupe la mayor parte de una pantalla de ordenador de resolución usual.
 
 No es necesario que invierta esfuerzo en la programación de los aspectos de esa página que no tienen relación
 con TypeScript. 
 Tanto HTML como CSS son aspectos que se estudiarán con cierto nivel de detalle en el futuro. 
 No se requiere que dedique esfuerzo a esos aspectos en esta práctica.
-Tampoco se propone en esta práctica que dote de interactividad a los elementos (botones, campos de texto,
-selectores, etc.) que figuran en la página anterior, y que no son necesarios en su trabajo.
+Tampoco se propone en esta práctica que utilice elementos interactivos (botones, campos de texto, selectores,
+etc.).
 
 Diseñe asimismo otra página HTML simple 
 
@@ -103,8 +108,8 @@ Diseñe asimismo otra página HTML simple
 
 que sirva de "página índice" para los ejercicios de la sesión de evaluación de la práctica.
 La página [1] será uno de los enlaces de [2] y a su vez [1] tendrá un enlace "Home" que apunte a [2].
-Enlace también en la página índice [2] la página que contiene la documentación de su proyecto.
-
+Enlace también en la página índice [2] la página que contiene la documentación de su proyecto, generada con
+Typedoc.
 
 Las siguientes deben tomarse como especificaciones adicionales de la aplicación a desarrollar:
 
@@ -114,21 +119,14 @@ Las siguientes deben tomarse como especificaciones adicionales de la aplicación
 * Dado que la QuickHull es un algoritmo que se define de forma natural recursivamente, se admitirá cualquier tipo de solución, 
   tanto recursiva como iterativa. 
   Obviamente la solución recursiva es la primera que han de intentar porque será más sencilla de abordar que una alternativa iterativa.  
-* Trate de imitar 
-  [esta simulación](https://en.wikipedia.org/wiki/Quickhull#/media/File:Animation_depicting_the_quickhull_algorithm.gif) 
-  priorizando la visualización de la nube de puntos y las líneas que el algoritmo dibuja progresivamente. 
-  El dibujo de los ejes de coordenadas puede considerarse una característica opcional.
 * El programa deberá dibujar línea a línea cada uno de los pasos que sigue el algoritmo en la evolución
   del cómputo de la envolvente, de forma similar a como lo hace la simulación anterior, que se tomará como
-  referncia.
+  referencia.
 * El programa dejará transcurrir un cierto intervalo de tiempo entre el dibujo de una línea y la siguiente
   en la evolución del algoritmo, de forma también análoga a como ocurre en la simulación previa.
 
-
-
-
 ## Referencias
-* 
+* [QuickHull Algorithm](https://en.wikipedia.org/wiki/Quickhull#Algorithm)
 * [TypeScript Tutorial](https://www.typescripttutorial.net/)
 * [TypeDoc](https://typedoc.org/)
 * [TypeScript track in Exercism](https://exercism.org/tracks/typescript)
