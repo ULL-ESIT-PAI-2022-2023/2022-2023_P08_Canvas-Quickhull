@@ -15,6 +15,5 @@ The project directory organization is as follows:
 
 .
 └── src
-    ├── evaluation-session
-    ├── exercism
-    └── jutge
+    └── evaluation-session
+
