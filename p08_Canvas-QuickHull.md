@@ -84,6 +84,10 @@ Trate de imitar
 priorizando la visualización de la nube de puntos y las líneas que el algoritmo dibuja progresivamente. 
 El dibujo de los ejes de coordenadas puede considerarse una característica opcional.
 
+Previo al desarrollo de la aplicación, realice un diseño de la misma identificando las diferentes clases que
+intervienen en el programa.
+Utilice alguna aplicación que conozca para dibujar un diagrama UML de las clases que intervienen.
+
 La visualización de la ejecución del programa se realizará a través de una página web alojada
 en la máquina IaaS-ULL de la asignatura y cuya URL tendrá la forma:
 
@@ -110,6 +114,10 @@ que sirva de "página índice" para los ejercicios de la sesión de evaluación 
 La página [1] será uno de los enlaces de [2] y a su vez [1] tendrá un enlace "Home" que apunte a [2].
 Enlace también en la página índice [2] la página que contiene la documentación de su proyecto, generada con
 Typedoc.
+
+Incluya una tercera página
+[3] `http://10.6.129.123:8080/uml.html`
+que muestre el diagrama UML de las clases que intervienen en su programa.
 
 Las siguientes deben tomarse como especificaciones adicionales de la aplicación a desarrollar:
 
